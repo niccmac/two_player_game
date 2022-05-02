@@ -1,6 +1,7 @@
 class Question
   
   def random_sum(current_player)
+    puts "this is current player #{current_player}"
     num1 = rand(1..20)
     num2 = rand(1..20)
     @answer = num1 + num2

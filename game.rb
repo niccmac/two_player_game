@@ -22,6 +22,7 @@ class Game
       game_count == 0 ? game_count = 1 : game_count = 0
       @current_player = players[game_count]
       question = Question.new
+      puts "this is what we're sending #{@current_player}"
       question.random_sum(@current_player)
       check_results
     end
